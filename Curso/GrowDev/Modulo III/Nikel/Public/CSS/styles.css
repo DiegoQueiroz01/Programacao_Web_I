@@ -45,8 +45,11 @@ header{
     color: white;
     border-radius: 10px;
 }
+.button-cancel{
+    border-radius: 10px;
+}
 .button-default:hover{
-   background-color: #4c79d3;
+    background-color: #4c79d3;
     color: #4e0070;
     border-radius: 10px; 
 }
