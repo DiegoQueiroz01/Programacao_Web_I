@@ -1,8 +1,12 @@
 #login{
-    background: linear-gradient(120deg, rgb(13, 54, 1)) no-repeat fixed;
+    background: linear-gradient(120deg, rgba(112, 86, 2, 0.911)) no-repeat fixed;
+}
+#app{
+    background: linear-gradient(120deg, rgb(194, 85, 85)) no-repeat fixed;
 }
 .text-login{
+    text-align: center;
     color: rgb(238, 255, 0);
-    font-size: 20px;
+    font-size: 35px;
     font-weight: 1000;
 }
