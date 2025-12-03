@@ -1,12 +1,13 @@
 #login{
-    background: linear-gradient(120deg, rgba(112, 86, 2, 0.911)) no-repeat fixed;
-}
-#app{
-    background: linear-gradient(120deg, rgb(194, 85, 85)) no-repeat fixed;
+    background: linear-gradient(120deg, rgb(126, 5, 5) 44.5%, rgb(255, 250, 230) 50%); /*Define a cor de fundo da página de login e cria um degradê entre as cores.*/
 }
 .text-login{
+    /* color: rgb(31, 2, 2); Define a cor do texto prinpal a página de login. */
+    font-size: 45px; /*Define o tamanho da fonte do texto na tela*/
+    text-align: center; /*Centraliza o texto na tela*/
+    font-weight: 1000; /*Permite definir o texto em negrito e regular a intesidade*/
+}
+.text-game{
     text-align: center;
-    color: rgb(238, 255, 0);
-    font-size: 35px;
-    font-weight: 1000;
+    font-size: 25px;
 }
