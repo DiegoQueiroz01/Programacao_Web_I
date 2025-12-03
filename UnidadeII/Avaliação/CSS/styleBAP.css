@@ -1,5 +1,5 @@
 #login{
-    background: linear-gradient(120deg, rgb(126, 5, 5) 44.5%, rgb(255, 250, 230) 50%) no-repeat fixed; /*Define a cor de fundo da página de login e cria um degradê entre as cores.*/
+    background: linear-gradient(120deg, rgb(126, 53, 5) 44.5%, rgb(255, 250, 230) 50%) no-repeat fixed; /*Define a cor de fundo da página de login e cria um degradê entre as cores.*/
 }
 .text-login{
     /* color: rgb(31, 2, 2); Define a cor do texto prinpal a página de login. */
@@ -14,13 +14,13 @@
 }
 .img-right-elfo{
     margin-right: -3%;/*Define a distância da margem direita em relação a imagem.*/
-    margin-block: -8%;
+    margin-top: -8%;/*Distância da margem do topo.*/
     display: flex; /*Cria uma forma de imagem fluatuante.*/
     justify-content: right;/*Posiciona a imagem à direita da tela.*/
 }
 .img-left-orc{
     display: flex; /*Cria uma forma de imagem fluatuante.*/
     justify-content: left;/*Deveria posicionar a imagem do orc à esquerda da tela de login.*/
-    margin-top:-43%; /*Ajuste da imagem do orc em relação ao topo da tela.*/
+    margin-top:-39%; /*Ajuste da imagem do orc em relação ao topo da tela.*/
     margin-left: -2%;/*Ajuste da imagem do orc em relação à esquerda da tela.*/
 }
