@@ -8,6 +8,16 @@
     font-weight: 1000; /*Permite definir o texto em negrito e regular a intesidade*/
 }
 .text-game{
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.205) 44.5%, rgba(126, 5, 5, 0.274) 50%); /*Define a cor de fundo do texto e cria um degradê entre as cores.*/
     text-align: center;
     font-size: 25px;
+}
+.img-right-elfo{
+    display: flex;
+    justify-content: right;/*Posiciona a imagem à direita da tela.*/
+}
+.img-left-orc{
+    float: left;
+    margin-right: 20px;
+    width: 30%;
 }
