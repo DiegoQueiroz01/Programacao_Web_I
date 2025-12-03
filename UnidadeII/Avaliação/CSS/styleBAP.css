@@ -16,6 +16,55 @@
     text-align: center;/*Centraliza o texto.*/
     font-size: 1.5rem;
 }
+.container{
+    min-height: -100vh;
+}
+#center-form{ /*Configuração do botão de inserir nome de jogador e container do form.*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+}
+#container-rank{ /*Configuração da tabela de rank*/
+    table{
+        color: white;
+    }
+    position: absolute;
+    top: 75%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+}
+.button-enter{ 
+    color: rgb(4, 43, 2); /*Cor das letras do botão.*/
+    border-radius: 50px; /*Formato do botão de iniciar o jogo*/
+    background-color: rgba(134, 236, 2, 0.829); /*Cor do botão de iniciar o jogo*/
+    width: 45%; /*Define o tamanho do botão.*/
+    margin: 0 23%; /*Centraliza o botão.*/
+}
+.nome{ /*Iniciar Jornada*/
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 1000;
+    margin: 0 15%;
+    color: black;
+}
+.name{ /*"Nome de jogador."*/
+    margin: 0 30%;
+    color: white;
+}
+.container-form{ /*Escrever o nome.*/
+    max-width: 400px; /*Largura máxima.*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px; /*Espaçamento acima.*/
+    margin-bottom: 10px; /*Espaçamento abaixo.*/
+}
+.create-name{ /*"Informe um nome criativo."*/
+    margin: 0 25%;
+    color: rgba(255, 255, 255, 0.651);
+}
 .img-right-elfo{
     width: 100%; /*Define a proporção da imagem?*/
     height: 78%;
