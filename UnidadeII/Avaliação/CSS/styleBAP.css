@@ -2,25 +2,32 @@
     background: linear-gradient(120deg, rgb(126, 53, 5) 44.5%, rgb(255, 250, 230) 50%) no-repeat fixed; /*Define a cor de fundo da página de login e cria um degradê entre as cores.*/
 }
 .text-login{
-    /* color: rgb(31, 2, 2); Define a cor do texto prinpal a página de login. */
-    font-size: 45px; /*Define o tamanho da fonte do texto na tela*/
+    font-size: 3rem; /*Define o tamanho da fonte do texto na tela*/
     text-align: center; /*Centraliza o texto na tela*/
     font-weight: 1000; /*Permite definir o texto em negrito e regular a intesidade*/
 }
 .text-game{
     background: linear-gradient(120deg, rgba(255, 255, 255, 0.205) 44.5%, rgba(126, 5, 5, 0.274) 50%); /*Define a cor de fundo do texto e cria um degradê entre as cores.*/
     text-align: center;/*Centraliza o texto.*/
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 .img-right-elfo{
-    margin-right: -3%;/*Define a distância da margem direita em relação a imagem.*/
+    width: 100%; /*Define a proporção da imagem?*/
+    height: auto;
+    aspect-ratio: 16/9; /*Ajusta conforme o tipo de tela.*/
+    object-fit: contain;
+    margin-right: -15%;/*Define a distância da margem direita em relação a imagem.*/
     margin-top: -8%;/*Distância da margem do topo.*/
     display: flex; /*Cria uma forma de imagem fluatuante.*/
     justify-content: right;/*Posiciona a imagem à direita da tela.*/
 }
 .img-left-orc{
+    width: 95%;
+    height: auto;
+    aspect-ratio: 16/9; /*Ajusta conforme o tipo de tela.*/
+    object-fit: contain;
     display: flex; /*Cria uma forma de imagem fluatuante.*/
     justify-content: left;/*Deveria posicionar a imagem do orc à esquerda da tela de login.*/
-    margin-top:-39%; /*Ajuste da imagem do orc em relação ao topo da tela.*/
-    margin-left: -2%;/*Ajuste da imagem do orc em relação à esquerda da tela.*/
+    margin-top:-55%; /*Ajuste da imagem do orc em relação ao topo da tela.*/
+    margin-left: -15%;/*Ajuste da imagem do orc em relação à esquerda da tela.*/
 }
