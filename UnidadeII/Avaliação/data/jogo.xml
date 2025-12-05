@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jogo>
+  <meta>
+    <casas>30</casas>
+  </meta>
+
+  <perguntas>
+    <pergunta>
+      <texto>Quem destruiu o Um Anel?</texto>
+      <resposta>Frodo</resposta>
+    </pergunta>
+    <pergunta>
+      <texto>Qual é o nome do mago cinzento?</texto>
+      <resposta>Gandalf</resposta>
+    </pergunta>
+    <pergunta>
+      <texto>Quem forjou os Anéis de Poder?</texto>
+      <resposta>Celebrimbor</resposta>
+    </pergunta>
+    <pergunta>
+      <texto>Qual raça Gollum era antes?</texto>
+      <resposta>Hobbit</resposta>
+    </pergunta>
+    <pergunta>
+      <texto>Nome do cavalo branco de Gandalf (na trilogia estendida)?</texto>
+      <resposta>Shadowfax</resposta>
+    </pergunta>
+    <pergunta>
+      <texto>Qual é o nome da fortaleza de Sauron?</texto>
+      <resposta>Barad-dûr</resposta>
+    </pergunta>
+    <pergunta>
+      <texto>Quem se tornou rei de Gondor no final?</texto>
+      <resposta>Aragorn</resposta>
+    </pergunta>
+  </perguntas>
+
+  <inimigos>
+    <inimigo>
+      <nome>Orc</nome>
+      <regra>par</regra>
+    </inimigo>
+    <inimigo>
+      <nome>Uruk-hai</nome>
+      <regra>impar</regra>
+    </inimigo>
+    <inimigo>
+      <nome>Troll</nome>
+      <regra>maiorQue7</regra>
+    </inimigo>
+    <inimigo>
+      <nome>Nazgul</nome>
+      <regra>soma678</regra>
+    </inimigo>
+  </inimigos>
+
+  <eventos>
+    <faixa inicio="1" fim="6" tipo="pergunta" />
+    <faixa inicio="7" fim="12" tipo="recompensa" />
+    <faixa inicio="13" fim="19" tipo="batalha" />
+    <faixa inicio="20" fim="30" tipo="aleatorio" />
+  </eventos>
+</jogo>

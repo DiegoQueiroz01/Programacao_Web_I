@@ -1,13 +1,15 @@
-const btnJogar = document.querySelector(".button-enter"); //faz o botão de jogar funcionar.
+// js/base.js
+const btnJogar = document.querySelector(".button-enter");
 
-btnJogar.addEventListener("click", () => { //abre o jogo quando clicado
-    const nome = document.getElementById("create-usuario").value.trim();
-    if(nome === ""){
-        alert("Escolha um nome para iniciar a aventura!");
-        return;
-    }
+btnJogar.addEventListener("click", () => {
+  const nome = document.getElementById("create-usuario").value.trim();
 
-    localStorage.setItem("jogador", nome); // Salva o nome do jogador.
+  if (nome === "") {
+    alert("Escolha um nome para iniciar a aventura!");
+    return;
+  }
 
-    window.location.href = "game.html"; //Move para o jogo.
+  localStorage.setItem("jogador", nome);
+  // redireciona para a página do jogo (mesma pasta)
+  window.location.href = "game.html";
 });

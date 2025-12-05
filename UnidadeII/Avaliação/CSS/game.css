@@ -1,0 +1,119 @@
+/* css/game.css */
+:root{
+  --gold: #ffd54a;
+  --dark: rgba(20,20,20,0.85);
+}
+
+body{
+  margin:0;
+  font-family: "Georgia", serif;
+  background: linear-gradient(120deg,#1b2b22,#323232);
+  color: white;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:16px;
+}
+
+header{ margin-top:18px; }
+#playerName{ margin:0; font-size:1.3rem; }
+
+#game-area{
+  display:flex;
+  align-items:flex-start;
+  gap:40px;
+  width:100%;
+  justify-content:center;
+}
+
+/* Tabuleiro: 30 casas como "caminho" em 10 colunas x 3 linhas visualmente */
+#tabuleiro{
+  display:grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap:8px;
+  width:720px;
+  padding:20px;
+  background: linear-gradient(180deg, rgba(0,0,0,0.25), rgba(0,0,0,0.45));
+  border-radius:12px;
+  border: 2px solid rgba(255,215,0,0.12);
+}
+
+/* Cada casa com textura de mapa */
+.casa{
+  width:100%;
+  padding-top:100%; /* quadrado responsivo */
+  position:relative;
+  border-radius:8px;
+  overflow:hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.6);
+  border: 2px solid rgba(255,215,0,0.12);
+  background-image: url("https://i.imgur.com/9x0Wf8E.jpeg");
+  background-size: cover;
+  background-position:center;
+}
+
+/* número sobre a casa */
+.casa > span{
+  position:absolute;
+  top:6px;
+  left:6px;
+  font-weight:bold;
+  background: rgba(0,0,0,0.45);
+  padding:2px 6px;
+  border-radius:6px;
+  font-size:0.9rem;
+}
+
+/* jogador: destaque */
+.jogador{
+  outline: 4px solid var(--gold);
+  box-shadow: 0 0 18px rgba(255,213,0,0.45);
+}
+
+/* Dado e botão */
+#dado-area{ width:220px; text-align:center; margin-top:40px; }
+#dado{
+  font-size:48px;
+  width:120px;
+  height:120px;
+  line-height:120px;
+  margin: 0 auto 12px;
+  background:var(--dark);
+  border-radius:12px;
+  transition: transform 0.12s linear;
+  font-weight:bold;
+  border: 3px solid rgba(255,215,0,0.3);
+  user-select:none;
+}
+button{
+  padding:10px 14px;
+  border-radius:10px;
+  border: none;
+  background:var(--gold);
+  color:black;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+/* caixa de evento (modal simples) */
+#evento-box{
+  position: fixed;
+  left:50%;
+  transform: translateX(-50%);
+  bottom: 28px;
+  background: rgba(0,0,0,0.85);
+  padding:16px;
+  border-radius:10px;
+  border: 2px solid var(--gold);
+  min-width:320px;
+  text-align:center;
+}
+.hidden{ display:none; }
+
+/* responsividade */
+@media(max-width:860px){
+  #game-area{ flex-direction:column; align-items:center; gap:14px; }
+  #tabuleiro{ width:92%; grid-template-columns: repeat(6, 1fr); }
+  #dado-area{ width:100%; }
+}
