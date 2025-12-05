@@ -1,9 +1,7 @@
-/* css/game.css */
-:root{
+:root{ /*Cores do tabuleiro e formas.*/
   --gold: #ffd54a;
   --dark: rgba(20,20,20,0.85);
 }
-
 body{
   margin:0;
   font-family: "Georgia", serif;
@@ -15,9 +13,8 @@ body{
   align-items:center;
   gap:16px;
 }
-
 header{ margin-top:18px; }
-#playerName{ margin:0; font-size:1.3rem; }
+#playerName{ margin:0; font-size:1.3rem; } /*Nome do jogador.*/
 
 #game-area{
   display:flex;
@@ -26,23 +23,19 @@ header{ margin-top:18px; }
   width:100%;
   justify-content:center;
 }
-
-/* Tabuleiro: 30 casas como "caminho" em 10 colunas x 3 linhas visualmente */
-#tabuleiro{
+#tabuleiro{ /*Tabuleiro.*/
   display:grid;
   grid-template-columns: repeat(10, 1fr);
   gap:8px;
   width:720px;
   padding:20px;
-  background: linear-gradient(180deg, rgba(0,0,0,0.25), rgba(0,0,0,0.45));
+  background: linear-gradient(180deg, rgba(0,0,0,0.25), rgba(0,0,0,0.45)); /*Cores do tabuleiro.*/
   border-radius:12px;
-  border: 2px solid rgba(255,215,0,0.12);
+  border: 2px solid rgba(255,215,0,0.12); /*Cor da borda.*/
 }
-
-/* Cada casa com textura de mapa */
 .casa{
   width:100%;
-  padding-top:100%; /* quadrado responsivo */
+  padding-top:100%; /*Quadrado responsivo.*/
   position:relative;
   border-radius:8px;
   overflow:hidden;
@@ -52,27 +45,27 @@ header{ margin-top:18px; }
   background-size: cover;
   background-position:center;
 }
-
-/* número sobre a casa */
-.casa > span{
+.casa > span{ /*Número da casa.*/
   position:absolute;
   top:6px;
   left:6px;
   font-weight:bold;
-  background: rgba(0,0,0,0.45);
+  background: rgba(0,0,0,0.45); /*Cor do número da casa.*/
   padding:2px 6px;
   border-radius:6px;
   font-size:0.9rem;
 }
-
-/* jogador: destaque */
 .jogador{
   outline: 4px solid var(--gold);
   box-shadow: 0 0 18px rgba(255,213,0,0.45);
 }
 
-/* Dado e botão */
-#dado-area{ width:220px; text-align:center; margin-top:40px; }
+/*Parte dos dados e botão.*/
+#dado-area{ 
+    width:220px; 
+    text-align:center; 
+    margin-top:40px; 
+} 
 #dado{
   font-size:48px;
   width:120px;
@@ -95,8 +88,6 @@ button{
   font-weight:bold;
   cursor:pointer;
 }
-
-/* caixa de evento (modal simples) */
 #evento-box{
   position: fixed;
   left:50%;
@@ -111,8 +102,7 @@ button{
 }
 .hidden{ display:none; }
 
-/* responsividade */
-@media(max-width:860px){
+@media(max-width:860px){ /*Parte responsiva.*/
   #game-area{ flex-direction:column; align-items:center; gap:14px; }
   #tabuleiro{ width:92%; grid-template-columns: repeat(6, 1fr); }
   #dado-area{ width:100%; }

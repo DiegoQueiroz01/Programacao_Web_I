@@ -1,3 +1,6 @@
+<!--Parte do XML - Alguns dos recursos que usei aqui não estão funcionando bem no jogo, não entendi completamente o motivo para a correção,
+vou pesquisar mais depois e entender o erro.-->
+
 <?xml version="1.0" encoding="UTF-8"?>
 <jogo>
   <meta>
